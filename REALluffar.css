@@ -1,0 +1,17 @@
+#container{
+ display: flex;
+ flex-direction: row;
+}
+ 
+#sidebar{
+ display: flex;
+ flex-direction: column;
+}
+ 
+.sideImg{
+ width: 100%;
+}
+ 
+#mainImg{
+ width: 80%;
+}

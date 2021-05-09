@@ -1,0 +1,37 @@
+.q {
+  background-color:greenyellow;
+  margin-left: 4%;
+  margin-top: 15%;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 1% 2%;
+  text-align: center;
+}
+
+.e {
+  background-color: #8A0303;
+  margin-left: 4%;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 1% 2%;
+}
+
+body {
+ background-color: #732881;
+}
+
+
+.c{
+
+}
+
+b1 {
+  size: 14px;
+  color: white;
+}
+
+.d {
+ font-size: 69px;
+ text-align: center;
+ margin-left: 30%;
+}
