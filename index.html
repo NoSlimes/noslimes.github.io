@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html>  
+<html>
+
 <head>
    <title>LANDING PAGE</title>
    <style>
-      .centertext{
+      .centertext {
          text-align: center;
       }
-      .centerimage{
+
+      img {
          display: block;
          margin-left: auto;
          margin-right: auto;
-         width: 40%;
       }
-      </style>
+   </style>
 </head>
+
 <body>
-   <div class = "centertext">
+   <div class="centertext">
       <p> Modpack Download: </p>
-          <a href="downloads">
-            <img src="files/images/downloads.png" alt="modpack" width="148" height="108">
-         </a>
+      <a href="downloads">
+         <img src="files/images/downloads.png" alt="modpack" width="148" height="108">
+      </a>
    </div>
    <br>
-   <div class = "centerimage">
-      <img src="files/images/mikeparty.gif" alt="mikeparty" width="500" height="500">
+   <br>
+   <script>
+      var clicks = 0;
+
+      function onClick(){
+         clicks ++;
+         document.getElementById("clicks").innerHTML = clicks;
+      };
+   </script>
+   <div class="centertext">
+   <button type="button" onClick="onClick()">Fin knapp</button>
+   <p>Clicks: <a id="clicks">0</a></p>
    </div>
 </body>
+
 </html>
