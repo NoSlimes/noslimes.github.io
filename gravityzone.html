@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GravityZone Unity Asset</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Unity Assets</a>
+                    <div class="dropdown-content">
+                        <a href="gravityzone.html">GravityZone Unity Asset</a>
+                    </div>
+
+                </li>
+                <li><a href="mailto:info@noslimes.com">Contact: info@noslimes.com</a></li>
+            </ul>
+
+        </nav>
+        <h1><a href="https://github.com/NoSlimes/GravityZone" style="color: #fff"> GravityZone Unity Asset</a></h1>
+    </header>
+    <main>
+        <h2>Description</h2>
+        <p>GravityZone is a Unity asset that allows you to create areas in your game that affect gravity on objects
+            inside them. You can use this to create areas of zero gravity, low gravity, high gravity, or even invert
+            gravity in certain areas.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Sphere or box-shaped zones</li>
+            <li>Local gravity can be set to be independent from global gravity</li>
+            <li>Customizable gravity force</li>
+            <li>Zero gravity - set gravity force to '0'</li>
+            <li>Add to or override global gravity</li>
+            <li>Orbit mode for simulating gravitational pull</li>
+            <li>Easy-to-use editor script for creating new Gravity Zones</li>
+            <li>Gravity Zones may be moved around</li>
+            <li>Changing the rotation of a zone changes it's flow of gravity</li>
+        </ul>
+        <h2>Usage</h2>
+        <ol>
+            <li>Add a Gravity Zone to your scene (GameObject &gt; 3D &gt; Gravity Zone)</li>
+            <li>Customize the Gravity Zone settings to your liking</li>
+            <li>Add a rigidbody to any object you want to be effected by the Gravity Zone</li>
+        </ol>
+        <h3>Optional:</h3>
+        <ul>
+            <li>Add a GravityZoneAgent component to any object that you want to be able to do extra logic on when inside
+                a Gravity Zone</li>
+            <ul>
+                <li>Use the GravityZoneAgent.IsInGravityZone property in your scripts to check if an object is inside a
+                    GravityZone</li>
+            </ul>
+            <li>You can create a GravityProfile asset to store default gravity settings and apply them to multiple
+                GravityZone objects (Create &gt; GravityZone &gt; Gravity Profile)</li>
+            <ul>
+                <li>There are 4 settings bundled with the package in (GravityZone/Settings)</li>
+            </ul>
+        </ul>
+        <h3>Gravity Zone Agent Example:</h3>
+        <p>Here's an example script that uses GravityZoneAgent to check if an object is inside a GravityZone and adjust
+            its behavior accordingly:</p>
+        <pre><code>using UnityEngine;
+      
+      [RequireComponent(typeof(GravityZoneAgent))]
+      public class MyScript : MonoBehaviour
+      {
+      
+          public float jumpForce = 10f;
+          private Rigidbody rb;
+          private GravityZoneAgent gravityZoneAgent;
+      
+          private void Start()
+          {
+              rb = GetComponent<Rigidbody>();
+              gravityZoneAgent = GetComponent<GravityZoneAgent>();
+          }
+      
+          private void Update()
+          {
+              if (gravityZoneAgent.IsInGravityZone)
+              {
+                  // Jump with less force in gravity zone
+                  if (Input.GetKeyDown(KeyCode.Space))
+                  {
+                      rb.AddForce(Vector3.up * (jumpForce / 2f), ForceMode.Impulse);
+                  }
+              }
+              else
+              {
+                  // Jump with normal force outside gravity zone
+                  if (Input.GetKeyDown(KeyCode.Space))
+                  {
+                      rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                  }
+              }
+          }
+          
+      }</code></pre>
+    </main>
+
+    <footer>
+        <p>Copyright © 2022 Elias Wennerberg</p>
+    </footer>
+</body>
+
+</html>
