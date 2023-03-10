@@ -64,6 +64,11 @@ body {
     cursor: pointer;
     background-color: inherit;
   }
+
+  button:hover {
+    background-color: #ddd;
+    color: black;
+  }
   
   .dropdown {
     position: relative;
