@@ -1,5 +1,5 @@
 /* Get the dropdown button and dropdown content */
-var dropdownButton = document.getElementById("drop-btn");
+var dropdownButton = document.getElementById("dropdown-btn");
 var dropdownContent = document.getElementById("dropdown-content");
 
 /* Add a click event listener to the dropdown button */
