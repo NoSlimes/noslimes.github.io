@@ -55,6 +55,15 @@ body {
     text-align: center;
     padding: 10px;
   }
+
+  .button{
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+  }
   
   .dropdown {
     position: relative;
