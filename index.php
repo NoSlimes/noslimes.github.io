@@ -11,20 +11,9 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index">Home</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropbtn">Unity Assets</a>
-                  <div class="dropdown-content">
-                      <a href="gravityzone">GravityZone Unity Asset</a>
-                  </div>
-                </li>
-                <li><a href="mailto:info@noslimes.com">Contact: info@noslimes.com</a></li>
-              </ul>
-            
+            <!-- Include the navigation menu from nav.html -->
+            <?php include 'nav.html'; ?>
         </nav>
-
-        <h1>SCHLIMCSHE GAMES</h1>
     </header>
     <main>
         <h1>Welcome to SCHLIMCSHE GAMES</h1>
