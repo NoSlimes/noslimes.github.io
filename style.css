@@ -71,15 +71,14 @@ body {
   }
   
   .dropdown-content {
-    padding-top: 10px;
-    top: 100px;
     display: none;
     position: absolute;
     z-index: 1;
     background-color: #f5f5f5;
     color: black;
+    padding-top: 10px;
+    top: 100%; /* Add this rule */
   }
-  
   
   .dropdown-content a {
     color: black;
