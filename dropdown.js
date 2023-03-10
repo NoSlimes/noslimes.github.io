@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+window.onload = function() {
     /* Get the dropdown button and dropdown content */
     var dropdownButton = document.getElementById("dropdown-btn");
     var dropdownContent = document.getElementById("dropdown-content");
@@ -12,5 +12,5 @@ document.addEventListener("DOMContentLoaded", function() {
         dropdownContent.style.display = "block";
       }
     });
-  });
+  }
   
