@@ -122,10 +122,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
-  width: 64px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .logo-container img {
