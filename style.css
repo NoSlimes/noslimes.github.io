@@ -111,3 +111,15 @@ body {
     background-color: #ddd;
     color: black;
   }
+
+  .logo-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.logo-container img {
+    max-height: 50px;
+    max-width: 100px;
+}
