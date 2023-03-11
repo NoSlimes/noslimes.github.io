@@ -123,11 +123,9 @@ footer {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   width: 64px;
-  margin: 64px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-container img {
