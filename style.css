@@ -127,11 +127,10 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   width: 64px;
-  height: 64px;
   margin: 64px;
 }
 
 .logo-container img {
-  height: inherit;
-  width: inherit;
+  height: 64px;
+  width: 64px;
 }
