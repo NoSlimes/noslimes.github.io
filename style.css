@@ -56,21 +56,8 @@ footer {
   padding: 10px;
 }
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
-.logo-container img {
-  height: 64px;
-  width: 64px;
-}
-
 .nav-menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -130,3 +117,11 @@ footer {
   color: black;
 }
 
+.logo-container {
+  margin: 20px;
+}
+
+.logo-container img {
+  height: 64px;
+  width: 64px;
+}
