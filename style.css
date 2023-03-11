@@ -1,135 +1,132 @@
 /* Set default font and background colors */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
-  
-  /* Style the header and navigation menu */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Style the main content area */
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 36px;
-    text-align: center;
-  }
-  
-  p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
 
-  .nav-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Style the header and navigation menu */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 
-  .nav-menu li:first-child{
-    margin-right: auto;
-  }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .navbutton{
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    background-color: inherit;
-  }
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
 
-  .navbutton:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #f5f5f5;
-    color: black;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
 
-  .dropdown-content a:hover {
-    background-color: #f5f5f5;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    background-color: inherit;
-  }
-  
-  .dropbtn:hover {
-    background-color: #ddd;
-    color: black;
-  }
+nav a:hover {
+  text-decoration: underline;
+}
 
-  .logo-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 32px;
+/* Style the main content area */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu li:first-child {
+  margin-right: auto;
+}
+
+.navbutton {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.navbutton:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.dropbtn:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.logo-container {
+  margin: 20px;
 }
 
 .logo-container img {
-    height: 64px;
-    width: 64px;
+  height: 64px;
+  width: 64px;
 }
