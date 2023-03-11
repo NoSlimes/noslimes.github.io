@@ -2,13 +2,15 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
+  min-height: 100%;
+  position: relative;
 }
 
 /* Style the header and navigation menu */
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 0px;
 }
 
 nav ul {
@@ -27,9 +29,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  
-}
+nav a:hover {}
 
 /* Style the main content area */
 main {
@@ -53,7 +53,10 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  position: absolute;
+  padding: 0px;
+  bottom: 0px;
+  width: 100%;
 }
 
 .nav-menu {
