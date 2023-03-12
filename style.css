@@ -48,6 +48,14 @@ p {
   line-height: 1.5;
 }
 
+img{
+  max-width: 100%;
+}
+
+video{
+  max-width: 100%;
+}
+
 /* Style the footer */
 footer {
   background-color: #333;
