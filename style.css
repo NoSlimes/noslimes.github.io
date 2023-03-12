@@ -52,6 +52,11 @@ img{
   max-width: 100%;
 }
 
+.centerimg{
+  align-content: center;
+  max-width: 100%;
+}
+
 video{
   max-width: 100%;
 }
