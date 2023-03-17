@@ -6,8 +6,6 @@ body {
 
 /* Style the header and navigation menu */
 header {
-  display: flex; /* add display flex to header */
-  justify-content: space-between; /* add justify content to space between */
   background-color: #333;
   color: #fff;
   padding: 20px;
@@ -17,10 +15,10 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* add display flex to nav ul */
 }
 
 nav li {
+  display: inline-block;
   margin-right: 20px;
 }
 
@@ -74,7 +72,7 @@ footer {
 
 .nav-menu {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -146,17 +144,11 @@ footer {
 
 .logo-container {
   display: flex;
-  justify-content: flex-start; /* change justify-content to flex-start */
+  justify-content: flex-start;
   align-items: center;
-}
+  }
 
 .logo-container img {
   height: 64px;
   width: 64px;
-}
-
-.nav-menu li {
-  flex-grow: 1; /* add flex-grow to nav-menu li */
-  display: flex; /* add display flex to nav-menu li */
-  justify-content: center; /* add justify-content to center */
 }
