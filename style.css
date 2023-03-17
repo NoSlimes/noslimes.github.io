@@ -144,9 +144,10 @@ footer {
 
 .logo-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-}
+  margin-right: auto;
+  }
 
 .logo-container img {
   height: 64px;
