@@ -8,4 +8,5 @@ tags: [modding]
 
 NoSlimes Random Crap is an old Minecraft mod I created a year or so ago. It's the result of me just messing around in MCreator and adding a bunch of random items, hence the name. I somehow managed to get the mod accepted on CurseForge, and if you want, you can download it there. I only ever released it for Minecraft 1.16.5, so it's a little bit old. Maybe I'll port it in the future if I have the time. Perhaps I'll even rewrite it completely in Java. Only time will tell.
 
-You can download it [here](https://www.curseforge.com/minecraft/mc-mods/noslimes-random-crap).
+>You can download the mod [here](https://www.curseforge.com/minecraft/mc-mods/noslimes-random-crap) if you'd like to try it.
+{: .prompt-info }

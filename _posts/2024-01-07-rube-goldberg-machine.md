@@ -10,4 +10,4 @@ This is a simulated Rube Goldberg machine created for an animation class in the 
 
 Here's a video of the Rube Goldberg machine:
 
-[Watch the video](/assets/video/projects/RubeGoldbergMachine.mp4)
+[Watch the video](/assets/vid/projects/RubeGoldbergMachine.mp4)
