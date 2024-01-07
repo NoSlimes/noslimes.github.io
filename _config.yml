@@ -16,7 +16,7 @@ timezone: Europe/Stockholm
 
 title: NoSlimes # the main title
 
-tagline: --PLACEHOLDER-- # it will display as the sub-title
+tagline: A site where I document some random stuff # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A webpage where I will be documenting my personal projects and some other stuff
