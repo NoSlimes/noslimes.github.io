@@ -14,7 +14,7 @@ We also made a Spotify playlist to set the musical feel of the game.
 
 ### Spotify Playlist
 
-[![Harald In Space Playlist](https://open.spotify.com/embed/playlist/7FAOdRit0Q4nFwvekBDR2z?utm_source=generator)](https://open.spotify.com/embed/playlist/7FAOdRit0Q4nFwvekBDR2z?utm_source=generator)
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7FAOdRit0Q4nFwvekBDR2z?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 >Currently, I sadly do not have a build of this game available for download.
 {: .prompt-info }
