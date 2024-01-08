@@ -66,6 +66,5 @@ If I learned something during that semester it was a little about arrays perhaps
   </tr>
 </table>
 
-
-> You can download the _game_ [here](https://www.dropbox.com/scl/fi/dc2sb4h6npy8o4urtmui2/Snake-Clone.zip?rlkey=s6jpnazurxy4k2bew8qffk0ua&dl=1) if you'd like to try it.
+>You can download the _game_ [here](https://www.dropbox.com/scl/fi/dc2sb4h6npy8o4urtmui2/Snake-Clone.zip?rlkey=s6jpnazurxy4k2bew8qffk0ua&dl=1) if you'd like to try it.
 {{: .prompt-info }}
