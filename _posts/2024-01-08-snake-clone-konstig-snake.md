@@ -9,19 +9,19 @@ This snake clone is a game I made following a class i attended in _"game develop
 
 If I learned something during that semester it was a little about arrays perhaps, as we made some sort of 2-dimensional array for building the map. Something like this:
 
-+---+---+---+---+---+---+---+
-| 1 | 1 | 0 | 1 | 1 | 1 | 1 |
-+---+---+---+---+---+---+---+
-| 1 | 0 | 0 | 1 | 0 | 1 | 1 |
-+---+---+---+---+---+---+---+
-| 1 | 0 | 0 | 0 | 1 | 0 | 1 |
-+---+---+---+---+---+---+---+
-| 1 | 1 | 1 | 0 | 1 | 1 | 0 |
-+---+---+---+---+---+---+---+
-| 1 | 0 | 1 | 0 | 0 | 1 | 1 |
-+---+---+---+---+---+---+---+
-| 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-+---+---+---+---+---+---+---+
++---+---+---+---+---+---+---+  
+| 1 | 1 | 0 | 1 | 1 | 1 | 1 |  
++---+---+---+---+---+---+---+  
+| 1 | 0 | 0 | 1 | 0 | 1 | 1 |  
++---+---+---+---+---+---+---+  
+| 1 | 0 | 0 | 0 | 1 | 0 | 1 |  
++---+---+---+---+---+---+---+  
+| 1 | 1 | 1 | 0 | 1 | 1 | 0 |  
++---+---+---+---+---+---+---+  
+| 1 | 0 | 1 | 0 | 0 | 1 | 1 |  
++---+---+---+---+---+---+---+  
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 |  
++---+---+---+---+---+---+---+  
 
 > You can download the _game_ [here](https://www.dropbox.com/scl/fi/dc2sb4h6npy8o4urtmui2/Snake-Clone.zip?rlkey=s6jpnazurxy4k2bew8qffk0ua&dl=1) if you'd like to try it.
 {{: .prompt-info }}
