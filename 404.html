@@ -2,30 +2,43 @@
 <html>
 
 <head>
-    <title>404</title>
+    <title>404 - Page Not Found | NoSlimes</title>
     <link rel="stylesheet" href="/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
-        <h1>Error 404 - File Not Found</h1>
+        <nav id="nav-placeholder"></nav>
     </header>
     <main>
-        <p>The file you were looking for were not found. Press the småg and you will be brought back home.</p>
-        
-        <figure>
-            <a href="/">
-                <img src="/files/images/smag.png" alt="Småg" class="img-small centerimg img-rounded img-shadow">
-            </a>
-            <figcaption>Click Småg to return home</figcaption>
-        </figure>
+        <div class="error-container">
+            <h1>404 - Page Not Found</h1>
+            <div class="error-code">404</div>
+            <p class="error-message">The file you were looking for was not found.</p>
+            <p class="error-description">Click Småg below to return home, or use the navigation above to find what you're looking for.</p>
+            
+            <figure class="error-mascot">
+                <a href="/" class="home-link">
+                    <img src="/files/images/smag.png" alt="Småg mascot" class="img-medium centerimg img-rounded img-shadow">
+                </a>
+                <figcaption>Click Småg to return home</figcaption>
+            </figure>
+            
+            <div class="error-actions">
+                <a href="/" class="btn-home">← Back to Home</a>
+                <a href="/#featuredProjects" class="btn-projects">View Projects</a>
+            </div>
+        </div>
     </main>
     <footer>
         <div id="foot-placeholder"></div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/loadNav.js"></script>
+    <script src="/injectFooter.js"></script>
+    <script src="/themeToggle.js"></script>
 </body>
 
 </html>
