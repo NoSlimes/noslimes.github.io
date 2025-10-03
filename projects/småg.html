@@ -18,25 +18,50 @@
             LBS in the fall of 2022. The Småg is now part of the school's lore. We also made a sheet with step-by-step
             instructions on how to structure a basic Småg. As we know, they come in many forms.
             <br><br>
-            A småg in all of it's glory:
-            <img class="centerimg" src="/files/images/smag.png" alt="Småg" width="400px">
-            <br><br>
-            Some other småg media:
-            <img class="centerimg" src="/files/images/projects/småg/smag_step-by-step.png" alt="Småg front" width="400px">
-            Småg step-by-step
-            <br><br>
-            <img class="centerimg" src="/files/images/projects/småg/smag_front.png" alt="Småg front" width="200px">
-            Småg front view
-            <br><br>
-            <img class="centerimg" src="/files/images/projects/småg/smagparty.gif" alt="Smågparty" width="400px">
-            Smågparty
+        </p>
+
+        <figure>
+            <img src="/files/images/smag.png" alt="Småg" class="img-medium centerimg img-rounded img-shadow">
+            <figcaption>A småg in all of it's glory</figcaption>
+        </figure>
+
+        <h2>Småg Media</h2>
+        
+        <div class="image-gallery fit-mode">
+            <figure>
+                <img src="/files/images/projects/småg/smag_step-by-step.png" alt="Småg step-by-step guide">
+                <figcaption>Småg step-by-step guide</figcaption>
+            </figure>
+            <figure>
+                <img src="/files/images/projects/småg/smag_front.png" alt="Småg front view">
+                <figcaption>Småg front view</figcaption>
+            </figure>
+            <figure>
+                <img src="/files/images/projects/småg/smagparty.gif" alt="Småg party animation">
+                <figcaption>Smågparty! 🎉</figcaption>
+            </figure>
+        </div>
+
+        <p>The Småg has become a beloved character and continues to inspire creativity among students!</p>
         </p>
     </main>
     <footer>
         <div id="foot-placeholder"></div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+        </div>
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/loadNav.js"></script>
+    <script src="/injectFooter.js"></script>
+    <script src="/imageModal.js"></script>
     <script src="/dropdown.js"></script>
 </body>
 

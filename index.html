@@ -2,13 +2,158 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=home">
-  <title>Redirecting to Home Page</title>
+    <title>NoSlimes - Home</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <p>If you are not redirected automatically, follow this <a href="home">link</a> and smågarna will bring you to the Home page.</p>
+    <header>
+        <nav id="nav-placeholder"></nav>
+    </header>
+    <main>
+        <p>Welcome to my digital space! Here you'll find various projects I've been working on, from games to utilities. Take a look around and explore what I've been creating.</p>
+        
+        <!-- Featured image with caption -->
+        <figure class="img-right">
+            <img src="/files/images/smag.png" alt="Småg mascot" class="img-small img-rounded img-shadow">
+            <figcaption>Meet Småg, the site mascot!</figcaption>
+        </figure>
+        
+        <p>I love creating interactive experiences and useful tools. Whether it's game development, web applications, or desktop utilities, I enjoy the process of bringing ideas to life through code. Each project teaches me something new and pushes me to explore different technologies and approaches.</p>
+        
+        <p>The projects showcased here range from simple experiments to more complex applications. Some are games built for fun, others are practical tools designed to solve specific problems. All of them represent my journey as a developer and my passion for creating things that people can actually use and enjoy.</p>
+
+        <h2>Featured Projects</h2>
+        <p>Here are my top 5 projects that showcase different aspects of my development journey:</p>
+        
+        <!-- Top 5 Projects Gallery -->
+        <div class="image-gallery" id="featuredProjects">
+            <figure>
+                <a href="/projects/småg" class="project-link">
+                    <img src="/files/images/projects/småg/smag_step-by-step.png" alt="Småg character creation guide">
+                    <div class="project-overlay">
+                        <span class="project-icon">�</span>
+                        <p>View Project</p>
+                    </div>
+                </a>
+                <figcaption>Småg - Iconic Character & School Legend</figcaption>
+            </figure>
+            <figure>
+                <a href="/projects/harald" class="project-link">
+                    <img src="/files/images/projects/harald/haraldold1.png" alt="Harald horror game screenshot">
+                    <div class="project-overlay">
+                        <span class="project-icon">👻</span>
+                        <p>View Project</p>
+                    </div>
+                </a>
+                <figcaption>Harald - Swedish Woods Horror Game</figcaption>
+            </figure>
+            <figure>
+                <a href="/projects/haraldinspace" class="project-link">
+                    <img src="/files/images/projects/småg/smag_front.png" alt="Harald In Space co-op game">
+                    <div class="project-overlay">
+                        <span class="project-icon">🚀</span>
+                        <p>View Project</p>
+                    </div>
+                </a>
+                <figcaption>Harald In Space - Co-op Stealth Mission</figcaption>
+            </figure>
+            <figure>
+                <a href="/projects/stunningdisco" class="project-link">
+                    <img src="/files/images/projects/småg/smagparty.gif" alt="Stunning Disco rhythm game">
+                    <div class="project-overlay">
+                        <span class="project-icon">🕺</span>
+                        <p>View Project</p>
+                    </div>
+                </a>
+                <figcaption>Stunning Disco - Competitive Rhythm Game</figcaption>
+            </figure>
+            <figure>
+                <a href="/projects/hexgame" class="project-link">
+                    <img src="/files/images/smag.png" alt="HexGame strategy game">
+                    <div class="project-overlay">
+                        <span class="project-icon">🎯</span>
+                        <p>View Project</p>
+                    </div>
+                </a>
+                <figcaption>HexGame - Hex-Based Strategy Game</figcaption>
+            </figure>
+        </div>
+
+        <p>Feel free to explore the individual project pages to learn more about each one. I'm always working on something new, so check back regularly for updates!</p>
+
+        <h2>Find Me Online</h2>
+        <p>Connect with me on various platforms:</p>
+        
+        <!-- External links gallery with clickable images and text overlays -->
+        <div class="image-gallery external-links-gallery">
+            <figure class="link-card">
+                <a href="https://wennerberg.dev" target="_blank" class="external-link">
+                    <div class="image-container">
+                        <img src="https://wennerberg.dev/assets/images/portrait.jpg" alt="Elias Wennerberg - Professional Portfolio" style="object-position: center 40%;">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <span class="site-icon">🌐</span>
+                                <h3>Professional Portfolio</h3>
+                                <p>wennerberg.dev</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </figure>
+            <figure class="link-card">
+                <a href="https://www.youtube.com/channel/UChpuqDhuXxGAcj2oG8sFYGA" target="_blank" class="external-link">
+                    <div class="image-container">
+                        <div class="placeholder-image youtube-placeholder">
+                            <img src="/files/images/icons/yt_icon_white_digital.png" alt="YouTube" class="brand-logo-overlay">
+                        </div>
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <span class="site-icon youtube-icon">▶</span>
+                                <h3>YouTube Channel</h3>
+                                <p>NoSlimesJustCats</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </figure>
+            <figure class="link-card">
+                <a href="https://github.com/NoSlimes" target="_blank" class="external-link">
+                    <div class="image-container">
+                        <div class="placeholder-image github-placeholder">
+                            <img src="/files/images/icons/GitHub_Invertocat_Light.png" alt="GitHub" class="brand-logo-overlay">
+                        </div>
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <span class="site-icon github-icon">&#x2699;</span>
+                                <h3>GitHub Profile</h3>
+                                <p>@NoSlimes</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div id="foot-placeholder"></div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+        </div>
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/loadNav.js"></script>
+    <script src="/injectFooter.js"></script>
+    <script src="/imageModal.js"></script>
+    <script src="/themeToggle.js"></script>
 </body>
 
 </html>

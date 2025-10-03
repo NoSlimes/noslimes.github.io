@@ -45,9 +45,13 @@
             planes/leaf plates, which made the whole process much easeier with much fewer vertices there as well.
             <br><br>
         <h3>Images</h3>
-        <img class="centerimg" src="/files/images/projects/harald/haraldold1.png" alt="Old harald livingroom">
-        Harald's old livingroom, which was the most furnished room in the old prototype. No textures at all.
-        <br><br>
+        
+        <figure>
+            <img src="/files/images/projects/harald/haraldold1.png" alt="Old harald livingroom" class="img-large centerimg img-rounded img-shadow">
+            <figcaption>Harald's old livingroom, which was the most furnished room in the old prototype. No textures at all.</figcaption>
+        </figure>
+
+        
         You can download an old build of the game <a
             href="https://www.dropbox.com/s/2q0ja5x8s8t8pjn/HaraldSetup.exe?dl=1">here</a> and try it yourself if
         you want to! <a href="https://www.dropbox.com/s/tehaydgsplw44wb/Harald.zip?dl=1">Here's</a> a zipped folder
@@ -57,8 +61,20 @@
     <footer>
         <div id="foot-placeholder"></div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+        </div>
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/loadNav.js"></script>
+    <script src="/injectFooter.js"></script>
+    <script src="/imageModal.js"></script>
     <script src="/dropdown.js"></script>
 </body>
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Examples</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>Image Utility Examples</h1>
+    </header>
+    <main>
+        <h2>Basic Image Classes</h2>
+        
+        <h3>Size Classes</h3>
+        <p>Here are examples of different image sizes:</p>
+        <p><strong>Small:</strong> <code>.img-small</code> - max-width: 200px</p>
+        <p><strong>Medium:</strong> <code>.img-medium</code> - max-width: 400px</p>
+        <p><strong>Large:</strong> <code>.img-large</code> - max-width: 600px</p>
+        <p><strong>Full:</strong> <code>.img-full</code> - width: 100%</p>
+        
+        <h3>Position Classes</h3>
+        <p><strong>Left aligned:</strong> <code>.img-left</code> - Floats left with right margin</p>
+        <p><strong>Right aligned:</strong> <code>.img-right</code> - Floats right with left margin</p>
+        <p><strong>Centered:</strong> <code>.centerimg</code> - Displays as block with auto margins</p>
+        
+        <h3>Style Classes</h3>
+        <p><strong>Rounded:</strong> <code>.img-rounded</code> - 8px border radius</p>
+        <p><strong>Circle:</strong> <code>.img-circle</code> - 50% border radius</p>
+        <p><strong>Shadow:</strong> <code>.img-shadow</code> - Drop shadow effect</p>
+        <p><strong>Border:</strong> <code>.img-border</code> - Border using accent color</p>
+        
+        <h2>Figure with Caption</h2>
+        <p>Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for images with captions:</p>
+        <pre><code>&lt;figure class="centerimg"&gt;
+  &lt;img src="/files/images/example.jpg" alt="Description"&gt;
+  &lt;figcaption&gt;This is a caption&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+        
+        <h2>Image Galleries</h2>
+        <p>Create responsive image grids:</p>
+        <ul>
+            <li><code>.image-gallery</code> - Default grid (200px min columns)</li>
+            <li><code>.image-gallery-small</code> - Small grid (150px min columns)</li>
+            <li><code>.image-gallery-large</code> - Large grid (300px min columns)</li>
+        </ul>
+        
+        <h2>JavaScript Helper Functions</h2>
+        <p>Include <code>/imageHelpers.js</code> and use these functions:</p>
+        
+        <h3>Basic Functions</h3>
+        <pre><code>// Simple image
+addImage('content/example.jpg', 'Description', 'img-medium centerimg')
+
+// Figure with caption  
+addFigure('projects/screenshot.png', 'Screenshot', 'My app screenshot', 'centerimg')
+
+// Image gallery
+addGallery([
+  {src: 'content/img1.jpg', alt: 'Image 1'},
+  {src: 'content/img2.jpg', alt: 'Image 2', caption: 'With caption'}
+], 'medium')</code></pre>
+        
+        <h3>Quick Shortcuts</h3>
+        <pre><code>// Common patterns
+ImageShortcuts.leftSmall('content/diagram.png', 'Diagram')
+ImageShortcuts.rightSmall('content/icon.png', 'Icon') 
+ImageShortcuts.centerMedium('content/photo.jpg', 'Photo')
+ImageShortcuts.hero('backgrounds/banner.jpg', 'Hero banner')
+ImageShortcuts.avatar('content/profile.jpg', 'Profile photo')
+ImageShortcuts.screenshot('projects/demo.png', 'Demo', 'App demonstration')</code></pre>
+        
+        <h2>File Organization</h2>
+        <p>Organize your images in these directories:</p>
+        <ul>
+            <li><code>/files/images/content/</code> - Blog posts, articles, general content</li>
+            <li><code>/files/images/projects/</code> - Project screenshots and media</li>
+            <li><code>/files/images/icons/</code> - UI icons and small graphics</li>
+            <li><code>/files/images/backgrounds/</code> - Hero images and backgrounds</li>
+        </ul>
+        
+    </main>
+    <footer>
+        <div id="foot-placeholder"></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/injectFooter.js"></script>
+    <script src="/imageHelpers.js"></script>
+</body>
+</html>
