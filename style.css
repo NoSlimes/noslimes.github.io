@@ -4,6 +4,8 @@
   --text: #00ff00;
   --accent: #fefefe;
   --highlight: #ffcc00;
+  --link: #66d9ff;
+  --link-hover: #a7f3ff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,6 +30,8 @@
   --text: #073642;
   --accent: #586e75;
   --highlight: #b58900;
+  --link: #0066cc;
+  --link-hover: #004a99;
 }
 
 ::selection {
@@ -81,6 +85,22 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Global link styles that follow theme variables */
+a {
+  color: var(--link);
+  text-decoration: underline dotted;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+a:visited {
+  opacity: 0.85;
 }
 
 .footer-links {
