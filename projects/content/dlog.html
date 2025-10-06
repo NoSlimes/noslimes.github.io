@@ -1,0 +1,119 @@
+<article class="project-readme">
+  <p>DLog enhances the default Unity console with a flexible, color-coded category system and a dedicated, filterable log window. With support for developer-only logs that are stripped from builds, DLog helps you debug more efficiently without runtime overhead in production.</p>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Categorized logs with color coding (Log, Warning, Error, and custom categories)</li>
+    <li>Developer-only logs that are excluded from builds</li>
+    <li>Dedicated Editor Window for viewing logs in real-time with filtering options</li>
+    <li>Editor utilities for upgrading existing Debug.Log calls to DLog</li>
+  </ul>
+
+  <h2>Installing</h2>
+  <p>You can add DLog to your project in two ways: via the Unity Package Manager (recommended) or by importing a <code>.unitypackage</code>.</p>
+
+  <h3>Method 1: Unity Package Manager (Recommended)</h3>
+  <p>This is the cleanest method, as it keeps the package separate from your <code>Assets</code> folder and makes updates easy.</p>
+  <ol>
+    <li>In the Unity Editor, open the <strong>Package Manager</strong> window (Window &gt; Package Manager).</li>
+    <li>Click the <strong>+</strong> (plus) icon and select <strong>"Add package from git URL..."</strong>.</li>
+    <li>Enter the following URL and click <strong>Add</strong>:</li>
+  </ol>
+  <pre><code>https://github.com/NoSlimes/DLog.git</code></pre>
+
+  <h3>Method 2: Traditional .unitypackage</h3>
+  <ol>
+    <li>Go to the <a href="https://github.com/NoSlimes/DLog/releases" target="_blank" rel="noopener noreferrer">Releases</a> page.</li>
+    <li>Download the latest <code>.unitypackage</code> and import it into your project via <strong>Assets &gt; Import Package &gt; Custom Package...</strong>.</li>
+  </ol>
+
+  <h2>How to Use</h2>
+
+  <h3>Simple Logging</h3>
+  <p>Use the static methods in <code>DLog</code> to log messages:</p>
+  <pre><code class="language-csharp">DLog.Log("This is a standard log message");
+DLog.LogWarning("This is a warning message");
+DLog.LogError("This is an error message");
+
+// Developer-only logs (only visible in the editor, not included in builds)
+DLog.DevLog("Developer-only log");
+DLog.DevLogWarning("Developer-only warning");
+DLog.DevLogError("Developer-only error");
+</code></pre>
+
+  <h3>Opening the Log Console Window</h3>
+  <ul>
+    <li>In the Unity Editor: <strong>Window &gt; DLog Console</strong>.</li>
+    <li>The window displays logs generated via <code>DLog</code> in real-time and can optionally fetch logs from Unity's built-in console.</li>
+    <li>Logs are color-coded by category and the window supports filtering options.</li>
+  </ul>
+
+  <h2>Creating and Using Custom Categories</h2>
+  <h3>1. Define Your Categories</h3>
+  <p>Centralize your categories in a static class for easy reuse and consistency. Example:</p>
+  <pre><code class="language-csharp">using UnityEngine;
+using NoSlimes.Logging;
+
+public static class LogCategories
+{
+    public static readonly DLogCategory AI = new("AI", Color.cyan);
+    public static readonly DLogCategory Networking = new("Network", "#FFA500"); // Orange
+    public static readonly DLogCategory UI = new("UI", new Color(0.5f, 0.7f, 1f)); // Light Blue
+}
+</code></pre>
+
+  <h3>2. Use Categories When Logging</h3>
+  <pre><code class="language-csharp">using NoSlimes.Logging;
+
+public class EnemyAI : MonoBehaviour
+{
+    void ChangeState(string newState)
+    {
+        DLog.Log($"State changed to '{newState}'", this, LogCategories.AI);
+    }
+}
+</code></pre>
+
+  <h2>Developer-Only Logs</h2>
+  <p>Use <code>DevLog</code>, <code>DevLogWarning</code>, and <code>DevLogError</code> for messages you want to see only in the editor. These calls are automatically excluded from builds.</p>
+
+  <pre><code class="language-csharp">using NoSlimes.Logging;
+
+public class PlayerMovement : MonoBehaviour
+{
+    void Update()
+    {
+        DLog.DevLog($"Player position: {transform.position}", this, LogCategories.Physics);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        DLog.DevLogWarning("Player collided with an untagged object.", this, LogCategories.Physics);
+    }
+}
+</code></pre>
+
+  <h2>Upgrading Existing Projects</h2>
+  <h3>DLog Upgrader Utility</h3>
+  <p><strong>Warning:</strong> This tool modifies C# files directly. These changes <em>cannot</em> be undone. Back up your project or use version control before running the upgrader.</p>
+
+  <p>Open the upgrader in Unity via <strong>Tools &gt; DLog Upgrader</strong>. The window will also prompt you after installation to encourage upgrading.</p>
+
+  <h4>Workflow</h4>
+  <ol>
+    <li>Click <strong>"Find All Debug.Log Occurrences"</strong> to scan your project and group results by file.</li>
+    <li>Review each file and use per-file <strong>Upgrade to DLog</strong> or <strong>Upgrade to DevLog</strong> buttons, or use the global <strong>Upgrade All</strong> actions.</li>
+  </ol>
+
+  <p>Manually converting all <code>Debug.Log</code> calls in a large project is tedious; the upgrader automates this process where possible.</p>
+
+  <h2>Summary</h2>
+  <p>DLog improves Unity debugging by providing structured, color-coded logs and a dedicated console. It is particularly useful for teams that want readable, filterable logs without shipping noisy debug output to players.</p>
+
+  <h2>Links</h2>
+  <ul>
+    <li><a href="https://github.com/NoSlimes/DLog" target="_blank" rel="noopener noreferrer">DLog on GitHub</a></li>
+    <li><a href="https://github.com/NoSlimes/DLog/releases" target="_blank" rel="noopener noreferrer">Releases</a></li>
+  </ul>
+
+</article>

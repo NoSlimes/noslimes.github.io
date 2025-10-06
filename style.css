@@ -40,6 +40,44 @@
 }
 /* #endregion */
 
+/* Project downloads (buttons) */
+.project-downloads {
+  margin: 20px 0 40px 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: var(--highlight);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 2px solid var(--highlight);
+}
+
+.download-button:hover {
+  background: transparent;
+  color: var(--highlight);
+}
+
+/* Ensure modal caption is readable on smaller screens */
+@media (max-width: 480px) {
+  .modal-caption { font-size: 14px; padding: 6px 10px; }
+}
+
+/* Project summary header */
+#project-summary {
+  font-size: 22px; /* smaller than the main title (h1) */
+  color: var(--text);
+  margin: 0px 0 50px 0; /* even closer to title, larger bottom margin */
+  font-weight: 600;
+}
+
 /* #region Layout */
 html, body {
   height: 100%;
@@ -118,6 +156,11 @@ a:visited {
 h1 {
   font-size: 36px;
   text-align: left;
+}
+
+/* Tighten spacing for project title */
+#project-title {
+  margin: 0 0 6px 0;
 }
 
 p {

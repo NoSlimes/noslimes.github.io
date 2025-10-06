@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project</title>
+  <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <header>
+    <nav id="nav-placeholder"></nav>
+    <h1 id="project-title">Loading…</h1>
+  </header>
+  <main>
+    <h2 id="project-summary"></h2>
+
+    <!-- Full HTML content (from old pages) -->
+    <div id="project-content"></div>
+
+    <div id="project-media" class="image-gallery fit-mode"></div>
+
+    <div id="project-links"></div>
+  </main>
+  <footer>
+    <div id="foot-placeholder"></div>
+  </footer>
+
+  <!-- Image Modal (shared) -->
+  <div id="imageModal" class="image-modal">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content">
+      <img class="modal-image" id="modalImage">
+    </div>
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/siteLoader.js"></script>
+  <script src="/scripts/imageModal.js"></script>
+  <script src="/scripts/themeToggle.js"></script>
+  <script src="/scripts/projects/projectRenderer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+[
+  {
+    "id": "småg",
+    "title": "Småg",
+    "summary": "A quirky mascot character with step-by-step assets and small media.",
+    "images": [
+      "/files/images/projects/småg/smag_step-by-step.png",
+      "/files/images/projects/småg/smag_front.png",
+      "/files/images/projects/småg/smagparty.gif"
+    ],
+    "links": [],
+    "contentPath": "/projects/content/sm%C3%A5g.html"
+  },
+  {
+    "id": "harald",
+    "title": "Harald",
+    "summary": "A horror game set in the Swedish woods. Work-in-progress with playable builds linked.",
+    "images": [
+      "/files/images/projects/harald/haraldold1.png"
+    ],
+    "links": [
+      { "url": "https://www.dropbox.com/s/2q0ja5x8s8t8pjn/HaraldSetup.exe?dl=1", "text": "Windows installer" },
+      { "url": "https://www.dropbox.com/s/tehaydgsplw44wb/Harald.zip?dl=1", "text": "Zip Archive" }
+    ],
+    "contentPath": "/projects/content/harald.html"
+  },
+  {
+    "id": "haraldinspace",
+    "title": "Harald In Space",
+    "summary": "Co-op stealth mission spinoff featuring the Harald character.",
+    "images": [
+      "/files/images/projects/småg/smag_front.png"
+    ],
+    "links": [],
+    "contentPath": "/projects/content/haraldinspace.html"
+  },
+  {
+    "id": "tetrisclone",
+    "title": "Tetris Clone",
+    "summary": "A simple Tetris-like block dropper built for learning game loops and input.",
+    "images": [],
+    "links": [],
+    "contentPath": "/projects/content/tetrisclone.html"
+  },
+  {
+    "id": "noslimesrandomcrap",
+    "title": "NoSlimes Random Crap",
+    "summary": "A grab-bag page for small experiments and utilities.",
+    "images": [],
+    "links": [],
+    "contentPath": "/projects/content/noslimesrandomcrap.html"
+  }
+ ,
+  {
+    "id": "dlog",
+    "title": "DLog",
+    "summary": "DLog is a more in-depth logging tool for Unity projects, with log categories, colors, and more.",
+    "images": [],
+    "links": [
+      { "url": "https://github.com/noslimes/dlog", "text": "GitHub repo" }
+    ],
+    "contentPath": "/projects/content/dlog.html"
+  }
+]

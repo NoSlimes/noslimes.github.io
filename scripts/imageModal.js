@@ -4,23 +4,15 @@
  */
 
 $(document).ready(function() {
-    // Add right-click event to gallery images for full-screen view
-    $('.image-gallery img').not('.external-links-gallery img').on('contextmenu', function(e) {
-        e.preventDefault(); // Prevent default right-click menu
+    // Delegate click event to image-gallery so dynamically added images work
+    $(document).on('click', '.image-gallery img:not(.external-links-gallery img)', function(e) {
+        e.preventDefault();
         openImageModal(this);
     });
     
-    // Add double-click event as alternative for full-screen view
-    $('.image-gallery img').not('.external-links-gallery img').dblclick(function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        openImageModal(this);
-    });
-    
-    // Prevent project links from triggering when double-clicking
-    $('.project-link').dblclick(function(e) {
-        e.preventDefault();
-        return false;
+    // Prevent single-click on project overlays from opening modal when clicking their child images
+    $(document).on('click', '.project-link', function(e) {
+        // Let normal navigation happen on click — nothing special required here.
     });
     
     // Close modal when clicking the X button
@@ -99,4 +91,3 @@ function preloadImages() {
 
 // Preload images when page is loaded
 $(window).on('load', preloadImages);
-
