@@ -442,8 +442,8 @@ figure.img-right {
   position: relative;
 }
 
-.youtube-placeholder {
-  background: linear-gradient(135deg, #ff0000, #cc0000);
+.itch-placeholder {
+  background: linear-gradient(135deg, #fa5c5c, #da2f2f);
 }
 
 .github-placeholder {
@@ -504,9 +504,9 @@ figure.img-right {
   margin-bottom: 8px;
 }
 
-.youtube-icon {
-  color: #ff0000;
-  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+.itch-icon {
+  color: #fa5c5c;
+  text-shadow: 0 0 10px rgba(250, 92, 92, 0.5);
 }
 
 .github-icon {
